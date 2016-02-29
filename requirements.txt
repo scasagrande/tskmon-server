@@ -1,0 +1,4 @@
+flask
+ripozo
+sqlalchemy
+flask_ripozo
