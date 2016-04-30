@@ -35,6 +35,9 @@ class Task(db.Model):
     title = db.Column(db.String(50), nullable=False)
     description = db.Column(db.Text, nullable=False)
     completed = db.Column(db.Boolean, default=False)
+    progress = db.Column(db.Integer, default=0)
+    progress_max = db.Column(db.Integer, default=100)
+
 
 db.create_all()
 
